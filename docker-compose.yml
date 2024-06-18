@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  postgresql: #имя любое, но говорящее
+    image: postgres:latest
+    ports:
+      - '5432:5432' #''local_port:postgresdb_port'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=db #имя любое
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
+
